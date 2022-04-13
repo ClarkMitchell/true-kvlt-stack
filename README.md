@@ -1,6 +1,6 @@
 # Remix Blues Stack
 
-![The Remix Blues Stack](https://repository-images.githubusercontent.com/461012689/37d5bd8b-fa9c-4ab0-893c-f0a199d5012d)
+![The True Kvlt Stack](https://user-images.githubusercontent.com/7844500/163278319-457b728a-d2e3-4325-b7ab-b2b3d9a983b8.jpeg)
 
 Learn more about [Remix Stacks](https://remix.run/stacks).
 
