@@ -1,11 +1,11 @@
-# Remix Blues Stack
+# Remix True Kvlt Stack
 
 ![The True Kvlt Stack](https://user-images.githubusercontent.com/7844500/163278319-457b728a-d2e3-4325-b7ab-b2b3d9a983b8.jpeg)
 
 Learn more about [Remix Stacks](https://remix.run/stacks).
 
 ```
-npx create-remix --template remix-run/blues-stack
+npx create-remix --template remix-run/true-kvlt
 ```
 
 ## What's in the stack
@@ -90,8 +90,8 @@ Prior to your first deployment, you'll need to do a few things:
 - Create two apps on Fly, one for staging and one for production:
 
   ```sh
-  fly create blues-stack-template
-  fly create blues-stack-template-staging
+  fly create true-kvlt-template
+  fly create true-kvlt-template-staging
   ```
 
 - Initialize Git.
@@ -111,14 +111,14 @@ Prior to your first deployment, you'll need to do a few things:
 - Add a `SESSION_SECRET` to your fly app secrets, to do this you can run the following commands:
 
   ```sh
-  fly secrets set SESSION_SECRET=$(openssl rand -hex 32) --app blues-stack-template
-  fly secrets set SESSION_SECRET=$(openssl rand -hex 32) --app blues-stack-template-staging
+  fly secrets set SESSION_SECRET=$(openssl rand -hex 32) --app true-kvlt-template
+  fly secrets set SESSION_SECRET=$(openssl rand -hex 32) --app true-kvlt-template-staging
   ```
 
   > **Note:** When creating the staging secret, you may get a warning from the Fly CLI that looks like this:
   >
   > ```
-  > WARN app flag 'blues-stack-template-staging' does not match app name in config file 'blues-stack-template'
+  > WARN app flag 'true-kvlt-template-staging' does not match app name in config file 'true-kvlt-template'
   > ```
   >
   > This simply means that the current directory contains a config that references the production app we created in the first step. Ignore this warning and proceed to create the secret.
@@ -128,11 +128,11 @@ Prior to your first deployment, you'll need to do a few things:
 - Create a database for both your staging and production environments. Run the following:
 
   ```sh
-  fly postgres create --name blues-stack-template-db
-  fly postgres attach --postgres-app blues-stack-template-db --app blues-stack-template
+  fly postgres create --name true-kvlt-template-db
+  fly postgres attach --postgres-app true-kvlt-template-db --app true-kvlt-template
 
-  fly postgres create --name blues-stack-template-staging-db
-  fly postgres attach --postgres-app blues-stack-template-staging-db --app blues-stack-template-staging
+  fly postgres create --name true-kvlt-template-staging-db
+  fly postgres attach --postgres-app true-kvlt-template-staging-db --app true-kvlt-template-staging
   ```
 
   > **Note:** You'll get the same warning for the same reason when attaching the staging database that you did in the `fly set secret` step above. No worries. Proceed!
