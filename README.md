@@ -1,6 +1,6 @@
 # Remix True Kvlt Stack
 
-![The True Kvlt Stack](https://user-images.githubusercontent.com/7844500/163278319-457b728a-d2e3-4325-b7ab-b2b3d9a983b8.jpeg)
+![The True Kvlt Stack](https://user-images.githubusercontent.com/7844500/163285028-444e29ac-e0cd-4964-9dbf-390005ad880e.png)
 
 Learn more about [Remix Stacks](https://remix.run/stacks).
 
